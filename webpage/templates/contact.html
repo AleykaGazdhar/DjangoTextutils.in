@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Textutils.in{%endblock %}
+{% block content %}
+
+<br><br><br>
+
+{% if name %}
+  <center> 
+    <h2>Thanks {{name}}!</h2>
+    <P>We received your email and will respond shortly..</P>
+  </center>
+  
+{% else %}  
+
+<section class="contact">
+  <div class="content">
+    <h1>CONTACT US</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+  </div>
+  <div class="container">
+    <div class="contactInfo">
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="text">
+          <h3>Address</h3>
+          <p>4671 Sugar Camp Road,<br> Owatonna, Minnesota,<br> 55060</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text">
+          <h3>Phone</h3>
+          <p>507-475-6094</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="text">
+          <h3>Email</h3>
+          <p>abc@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contactForm">
+      <form action=" " method="POST" class="contact-form">
+        {% csrf_token %}
+        <h2>Send Email</h2>
+        <div class="inputBox">
+          <input type="text" name="Full-Name" required="required">
+          <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+          <input type="email" name="Email-Address" required="required">
+          <span>Email Address</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" name="Subject" required="required">
+          <span>Subject</span>
+        </div>
+        <div class="inputBox">
+          <textarea name="Message" required="required"></textarea>
+          <span>Message</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" name="" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</section>
+{% endif %}
+</body>
+</html>
+
+{% endblock %}

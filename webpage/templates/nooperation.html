@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Error{%endblock %}
+{% block content %}
+
+<br><br><br>
+
+<div class="container">
+<center> 
+	<strong><h1>Oopss!!</h1></strong>
+	<h5>You have not selected any operation to peform. <br> Please select and try again...</h5>
+</center>
+</div>
+<br>
+ <center>
+  <div class="col-12">
+    <a class="btn btn-secondary" href="{% url 'home' %}" type="button">Go Back</a>
+</div>
+</center>
+
+{% endblock %}

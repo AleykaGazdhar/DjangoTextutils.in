@@ -1,0 +1,205 @@
+
+body {
+       background-color: powderblue;
+}
+
+#exampleFormControlTextarea1 {
+       border: 1px solid black;
+}
+.form-label{
+       font-weight: bold;
+       font-size: 20px;
+}
+
+* {
+       box-sizing: border-box;
+}
+.contact{
+       position: relative;
+       min-height: 100vh;
+       padding: 50px,100px;
+       display: flex;
+       justify-content: center;
+       align_items: center;
+       flex-direction: column;
+}
+.contact .content{
+       max-width: 1500px;
+       text-align: center;
+}
+.contact .content h1{
+       font-size: 36px;
+        color: black;
+        font-weight: bold;
+}
+.contact .content p{
+        padding: 3px;
+        color: dimgrey;
+}
+.container{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 30px;
+}
+.container .contactInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+}
+.container .contactInfo .box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+}
+.container .contactInfo .box .icon{
+        min-width: 60px;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+}
+.container .contactInfo .box .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: black;
+        flex-direction: column;
+        font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+        font-weight: bold;
+        color: black;
+}
+.contactForm{
+       width: 40%;
+       padding: 40px;
+       background: #fff;
+}
+
+.contactForm h2{
+        font-size: 30px;
+        color: #333;
+        font-weight: bold;
+}
+.contactForm .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+}
+.contactForm .inputBox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        transition: 0.5s;
+        color: #666;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span{
+         color: #e91e63;
+         font-size: 12px;
+         transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+           width: 100px;
+           background: #00bcd4;
+           color: #fff;
+           border: none;
+           cursor: pointer;
+           padding: 10px;
+           font-size: 18px;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+           background-color: black;
+}
+.about-1{
+         margin: 30px;
+         padding: 5px;
+ }
+.about-1 h1{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+}
+.about-1 p{
+        text-align: center;
+        padding: 3px;
+        color: dimgrey;
+}
+.about-item{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        background-color: white;
+        padding: 80px,30px;
+        box-shadow: 0 0 9px rgba(0,0,0.6);
+        text-align: center;
+}
+.about-item i{
+        font-size: 33px;
+}
+.about-item h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+}
+.about-item hr{
+       width: 46px;
+       height: 3px;
+       background-color: #5fbff9;
+       margin: 0 auto;
+       border: nome;
+}
+.about-item p{
+       margin-top: 20px;
+       font-size: 15px;
+}
+.about-item:hover{
+       background-color: #5fbff9;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+       color: white;
+}
+.about-item:hover hr{
+        background-color: black;
+}
+.about-item:hover i{
+        transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+        transition: all 400ms ease-in-out;
+}
+footer{
+        background-color: black;
+        padding: 30px;
+}
+footer p{
+        color: white;
+        font-weight: bold;
+}
+
+
+
+
